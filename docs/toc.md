@@ -1,4 +1,3 @@
-- [Install](/install)
-- [Guide](/guide)
-  - [How to do A](/guide/how-to-do-a)
-  - [How to do B](/guide/how-to-do-b)
+- [算法与数据结构](/)
+- [二叉树基本操作](notes/二叉树基本操作-C.md)
+- [README](/home)
