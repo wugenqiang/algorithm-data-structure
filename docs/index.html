@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>EnjoyToShare - Notes</title>
-    <!--<link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">-->
-    <link rel="stylesheet" href="./plugin/docute.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Hexo-Sakura</title>
+    <meta name="description" content="Effortlessly documentation done right! Writing docs without build process.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docute@3/dist/docute.css">
+    <style>
+        .weibo-icon {
+            fill: #666;
+        }
+        .weibo-icon:hover {
+            fill: #333;
+        }
+    </style>
 </head>
 <body>
-<div id="docute"></div>
-<!--<script src="https://unpkg.com/docute@4/dist/docute.js"></script>-->
-<script src="./plugin/docute.js"></script>
+<!-- don't remove this part -->
+<div id="app"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
 <script>
-    new Docute({
-        target: '#docute',
-        nav: [
-            {
-                title: '首页',
-                link: '/'
-            },
-            {
-                title: 'GitHub',
-                link: 'https://github.com/wugenqiang'
-            },
-
-
-        ],
-        layout: 'narrow',
-        sidebar: [
-            // A sidebar item, with child links
-            {
-                title: 'Guide',
-                children: [
-                    {
-                        title: 'Getting Started',
-                        link: '/guide/getting-started'
-                    },
-                    {
-                        title: 'Installation',
-                        link: '/guide/installation'
-                    }
-                ]
-            },
-            // An external link
-            {
-                title: 'GitHub',
-                link: 'https://github.com/wugenqiang'
-            }
-        ]
-    })
+    window.onload = function(){
+        var valine = new Valine();
+        valine.init({
+            el: '#vcomments',
+            appId: "KIlqXsCmzBUnovnvh5ih8mk9-gzGzoHsz",
+            appKey: "e0v6zIg2NGg44PM6MVLa7voo",
+            path: window.location.pathname,
+            placeholder: "你是我一生只会遇见一次的惊喜 ..."
+        })
+    }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/docute@3/plugins/docsearch.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docute-evanyou/dist/evanyou.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/docute@3/dist/docute.js"></script>-->
+<script src="./plugin/docute.js"></script>
+<script src="./config.js"></script>
 </body>
 </html>
