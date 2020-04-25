@@ -14,13 +14,16 @@
         .weibo-icon:hover {
             fill: #333;
         }
+        .vcopy.txt-right {
+            display: none;
+        }
     </style>
 </head>
 <body>
 <!-- don't remove this part -->
 <div id="app"></div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src='./plugin/Valine.min.js'></script>
 <script>
     window.onload = function(){
         var valine = new Valine();
@@ -35,8 +38,8 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/docute@3/plugins/docsearch.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docute-evanyou/dist/evanyou.min.js"></script>
-<!--<script src="https://cdn.jsdelivr.net/npm/docute@3/dist/docute.js"></script>-->
-<script src="./plugin/docute.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docute@3/dist/docute.js"></script>
+<!--<script src="./plugin/docute.js"></script>-->
 <script src="./config.js"></script>
 </body>
 </html>
