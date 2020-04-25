@@ -4,50 +4,32 @@ const langs = [
 ]
 
 docute.init({
+    // 配置...
+    // 项目根目录里的 README.md
+    home: './README.md',
+    // true 将会默认使用 `landing.html`
     landing: 'landing.html',
     debug: true,
-    // announcement(route) {
-    //   const info = { type: 'success' }
-    //   if (/\/zh-.+$/.test(route.path)) {
-    //     info.html = '<a style="margin-right:10px;" class="docute-button docute-button-mini docute-button-success" href="https://github.com/egoist/donate" target="_blank">捐赠!</a> 通过 Patron 或者一次性捐赠支持 Docute 的开发。'
-    //   } else {
-    //     info.html = '<a style="margin-right:10px;" class="docute-button docute-button-mini docute-button-success" href="https://github.com/egoist/donate" target="_blank">Donate!</a> Support Docute development by becoming a patron or one-time donation.'
-    //   }
-    //   return info
-    // },
-    repo: 'honjun/hexo-theme-sakura',
-    'edit-link': 'https://github.com/hojundoc/hojundoc.github.io/blob/master/sakura/docs/',
+
+    // slug for your github repo
+    repo: 'wugenqiang/algorithm-data-structure',
+    // twitter username
+    twitter: 'enjoytoshare',
+    // the link to source file of current page
+    'edit-link': 'https://github.com/wugenqiang/algorithm-data-structure/blob/master/docs/',
+
+    //自定义侧边栏目录
+    //toc: './toc.md',
+
+    // 显示 h2 到 h4 的标题
     tocVisibleDepth: 3,
-    nav: {
-        default: [
-            {
-                title: '首页', path: '/home'
-            },
-            {
-                title: '贡献', path: '/contributions'
-            },
-            {
-                title: 'Sakura站', path: '/demo'
-            },
-            {
-                title: '选择语言', type: 'dropdown', items: langs
-            }
-        ],
-        'en': [
-            {
-                title: 'Home', path: '/en/'
-            },
-            {
-                title: 'contributions', path: '/en/contributions'
-            },
-            {
-                title: 'demo', path: '/demo'
-            },
-            {
-                title: 'Languages', type: 'dropdown', items: langs
-            }
-        ]
-    },
+    nav: [
+        // 首页
+        {title: '首页', path: '/'},
+        // 中文文档
+        {title: '博客', path: 'https://wugenqiang.github.io/'},
+
+    ],
     plugins: [
         // docsearch({
         //   appId: '',
