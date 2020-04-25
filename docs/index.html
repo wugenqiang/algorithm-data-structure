@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://gitee.com/wugenqiang/PictureBed/raw/master/CS-Notes/20200425141925.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>Hexo-Sakura</title>
+    <title>EnjoyToShare - Notes</title>
     <meta name="description" content="Effortlessly documentation done right! Writing docs without build process.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docute@3/dist/docute.css">
+    <link rel="stylesheet" href="./plugin/docute.css">
     <style>
         .weibo-icon {
             fill: #666;
@@ -14,7 +15,7 @@
         .weibo-icon:hover {
             fill: #333;
         }
-        .vcopy.txt-right {
+        .power.txt-right {
             display: none;
         }
     </style>
@@ -22,7 +23,8 @@
 <body>
 <!-- don't remove this part -->
 <div id="app"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--引入 LeanCloud 数据库-->
+<script src="./plugin/av-min.js"></script>
 <script src='./plugin/Valine.min.js'></script>
 <script>
     window.onload = function(){
@@ -32,14 +34,15 @@
             appId: "KIlqXsCmzBUnovnvh5ih8mk9-gzGzoHsz",
             appKey: "e0v6zIg2NGg44PM6MVLa7voo",
             path: window.location.pathname,
-            placeholder: "你是我一生只会遇见一次的惊喜 ..."
+            placeholder: "你是我一生只会遇见一次的惊喜 ...",
+            avatar: "monsterid"
         })
     }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/docute@3/plugins/docsearch.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docute-evanyou/dist/evanyou.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docute@3/dist/docute.js"></script>
-<!--<script src="./plugin/docute.js"></script>-->
+<script src="./plugin/docsearch.js"></script>
+<!--实现主页面彩色带显示-->
+<script src="./plugin/evanyou.min.js"></script>
+<script src="./plugin/docute.js"></script>
 <script src="./config.js"></script>
 </body>
 </html>
