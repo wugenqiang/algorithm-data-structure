@@ -31,13 +31,7 @@ docute.init({
 
     ],
     plugins: [
-        // docsearch({
-        //   appId: '',
-        //   apiKey: '25626fae796133dc1e734c6bcaaeac3c',
-        //   indexName: 'docsearch',
-        //   tags: ['english', 'zh-Hans'],
-        //   url: 'sakura.hojun.cn/docs/'
-        // }),
+
         function valine(context) {
             context.registerComponent('content:end',{
                 template: '<div id="vcomments" style="padding: 50px;"></div>',
