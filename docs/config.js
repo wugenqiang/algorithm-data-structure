@@ -55,7 +55,7 @@ docute.init({
         },
         evanyou(),
         docsearch({
-            appId: '1147290282',
+            appId: '',
             apiKey: 'fa9a943ccb3e911d689d36f87933b386',
             indexName: 'wugenqiang_algorithm-data-structure',
             tags: ['english', 'zh-Hans', 'zh-Hant', 'ja'],
