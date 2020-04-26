@@ -14,6 +14,20 @@
     <script src="./plugin/av-min.js"></script>
     <script src='./plugin/Valine.min.js'></script>
 
+    <script>
+        window.onload = function(){
+            var valine = new Valine();
+            valine.init({
+                el: '#vcomments',
+                appId: "KIlqXsCmzBUnovnvh5ih8mk9-gzGzoHsz",
+                appKey: "e0v6zIg2NGg44PM6MVLa7voo",
+                avatar: 'monsterid',
+                path: window.location.pathname,
+                placeholder: "你是我一生只会遇见一次的惊喜 ..."
+            })
+        }
+    </script>
+
     <style>
         .weibo-icon {
             fill: #666;
