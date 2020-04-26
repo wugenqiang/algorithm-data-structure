@@ -55,11 +55,11 @@ docute.init({
         },
         evanyou(),
         docsearch({
-            appId: 'BH4D9OD16A',
-            apiKey: '65360cf9a91d87cd455d2b286d0d89ee',
-            indexName: 'docute',
+            appId: '1147290282',
+            apiKey: 'fa9a943ccb3e911d689d36f87933b386',
+            indexName: 'wugenqiang_algorithm-data-structure',
             tags: ['english', 'zh-Hans', 'zh-Hant', 'ja'],
-            url: 'https://v3.docute.org'
+            url: 'https://wugenqiang.github.io/algorithm-data-structure'
         }),
     ]
 })
