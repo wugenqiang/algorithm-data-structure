@@ -54,12 +54,5 @@ docute.init({
             })
         },
         evanyou(),
-        docsearch({
-            appId: '',
-            apiKey: 'fa9a943ccb3e911d689d36f87933b386',
-            indexName: 'wugenqiang_algorithm-data-structure',
-            tags: ['english', 'zh-Hans', 'zh-Hant', 'ja'],
-            url: 'https://wugenqiang.github.io/algorithm-data-structure'
-        }),
     ]
 })
