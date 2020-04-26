@@ -26,8 +26,26 @@ docute.init({
     nav: [
         // 首页
         {title: '首页', path: '/'},
-        // 中文文档
-        {title: '博客', path: 'https://wugenqiang.github.io/'},
+        // 学习笔记
+        {
+            title: '学习笔记',
+            type: 'dropdown',
+            items: [
+                {title: 'CS-Notes', path: 'https://wugenqiang.github.io/CS-Notes/'},
+                {title: '算法笔记', path: 'https://wugenqiang.github.io/algorithm-data-structure/'},
+            ]
+        },
+        // 技术博客
+        {
+            title: '技术博客',
+            type: 'dropdown',
+            items: [
+                {title: 'CSDN', path: 'https://blog.csdn.net/wugenqiang'},
+                {title: 'GitHub', path: 'https://wugenqiang.github.io/'},
+            ]
+        },
+        // 留言板
+        {title: '留言板', path: '/notes/contact'},
 
     ],
     plugins: [
