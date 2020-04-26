@@ -25,7 +25,7 @@ docute.init({
     tocVisibleDepth: 3,
     nav: [
         // 首页
-        {title: '首页', path: '/'},
+        {title: '首页', path: '/home'},
         // 学习笔记
         {
             title: '学习笔记',
