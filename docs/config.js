@@ -31,7 +31,7 @@ docute.init({
             title: '学习笔记',
             type: 'dropdown',
             items: [
-                {title: 'CS-Notes', path: 'https://wugenqiang.github.io/CS-Notes/'},
+                {title: 'CS-Notes', path: 'https://wugenqiang.github.io/NoteBook/'},
                 {title: '算法笔记', path: 'https://wugenqiang.github.io/algorithm-data-structure/'},
             ]
         },
